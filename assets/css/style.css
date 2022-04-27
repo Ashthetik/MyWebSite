@@ -1,0 +1,335 @@
+/* Utility Classes */
+.d_none {
+    display: none;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+a {
+    color: white;
+} 
+
+a:hover {
+    color:#DB5461;
+    
+}
+
+.loading {
+    font-size: 2rem;
+}
+
+.p_2{
+    padding: 0.5rem;
+}
+/* END Utility Classes */
+
+/* Components */
+.bio__media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.bio__media img {
+    height: 120px;
+}
+
+.bio__media__text {
+    padding: 1rem;
+}
+
+.bio__media__text h1{
+    font-size: 36px;
+    font-weight: 900;
+    color: #DB5461;
+
+}
+
+.bio__media__text p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5rem;
+    
+}
+
+.card__custom {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    height: 300px;
+    min-height: 300px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    flex-grow: 1;
+    flex-basis: calc(100% /2);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__custom > .card__custom__text {
+    max-width: calc((100% / 3) *2);
+    text-align: right;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.card__custom__img {
+    
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-image: url(../img/cards_bg_img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    z-index: -1;
+    left: 60%;
+    transform: translateX(-50%);
+    border-radius: 85px 0 100px 25px;
+
+}
+
+.card_custom__button a, .btn_load_more {
+    background: #F1EDEE;
+    border: 5px solid #3D5467;
+    box-sizing: border-box;
+    border-radius: 54px;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+    color: #3D5467;
+}
+
+.card_custom__button a:hover, .btn_load_more:hover {
+    cursor: pointer;
+    background: #324555;
+    color: white;
+    border-color: #DB5461;
+    transition: 1s;
+}
+
+.card__custom__text h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* END Componenet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: white;
+    background: linear-gradient(116.82deg, #3D5467 0%, #1A232B 99.99%, #333333 100%);
+
+}
+
+a {
+ text-decoration: none;   
+}
+
+/* Home Page */
+main#home {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home > .about__me {
+    text-align: center;
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+#home > .about__me > h1 {
+    margin: 20px 0 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #DB5461;
+}
+
+#home > .about__me > h3 {
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+#home > .about__me > h1  {
+    font-style: normal;
+    line-height: 42px;
+    letter-spacing: 0.115em;
+}
+
+#home > .about__me > h3
+{
+    font-style: normal;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    border: .8em solid #DB5461;
+    border-style: none;
+    background: linear-gradient(60deg, #3D5467 0%, #1A232B 99.99%, #333333 100%);
+    border-radius: 25px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+#home > .about__me p {
+    font-weight: 100;
+    font-size: 22px;
+    padding: 2rem;
+
+    border: .8em solid #DB5461;
+    border-style: none;
+    background: linear-gradient(60deg, #3D5467 0%, #1A232B 99.99%, #333333 100%);
+    border-radius: 25px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+.skills_projects_link {
+    position: relative;
+}
+
+.skills_projects_link > a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.skills_projects_link > a:hover {
+    color: #DB5461;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.skills_projects_link > a:hover::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin: auto;
+    text-align: center;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #DB5461;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+/* Header */
+#site_header {
+    text-align: center;
+    padding: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site_header > h1 {
+    text-transform: uppercase;
+}
+
+nav a {
+        color: #e2e2e2;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: #DB5461;
+}
+
+/* Portfolio Page Section */
+#portfolio {
+    margin-top: 4rem;
+    
+}
+
+#portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Skills */
+#skills_section {
+    margin-top: 4rem;
+    min-height: 300px;
+    background-image: url(../img/skills_bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+}
+
+#skills_section h2 {
+    margin-left: 180px;
+    font-size: 44px;
+    color: #F1EDEE;
+    line-height: 2rem;
+
+}
+
+#skills_section ul {
+    list-style: none;
+    margin: 20px 120px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#skills_section ul  li {
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #DB5461;
+    border: 5px solid #3D5467;
+    border-radius: 35px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 0 1rem;
+
+}
+
+.card__back {
+    display: none;
+}
+.rotate__card {
+    transform: rotate3d(360,0,0,180deg);
+}
+
+/* Site Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Media Query  */
+@media screen and (max-width: 475px) {
+    .card {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
