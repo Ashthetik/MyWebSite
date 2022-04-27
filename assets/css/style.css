@@ -156,25 +156,25 @@ main#home {
 #home > .about__me {
     text-align: center;
     width: 80%;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
 }
 
 #home > .about__me > h1 {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
     font-size: 36px;
     font-weight: 900;
     color: #DB5461;
 }
 
 #home > .about__me > h3 {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 250;
 
 }
 
 #home > .about__me > h1  {
     font-style: normal;
-    line-height: 42px;
+    line-height: 32px;
     letter-spacing: 0.115em;
 }
 

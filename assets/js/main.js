@@ -14,6 +14,7 @@ const Home = {
             <br><br><div class="skills_projects_link">
                 <router-link to="/projects"> Projects | Skills </router-link>
             </div>
+            <footer>© Developed by <a href="https://github.com/KazutoKashima">Phoenix Reid</a>, with ❤️ and VueJS.</footer>
         </div>
     </main>
     
@@ -194,5 +195,8 @@ const router = new VueRouter({
 });
 
 const app = new Vue({
-    router
+    router,
+    data: {
+        title: 'Phoenix Reid'
+    }
 }).$mount("#app");
