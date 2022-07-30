@@ -1,20 +1,20 @@
 // Create route components:
 const Home = {
     template: `
-    <script>
-        $(window).scroll(function(event) {
-            function projectsBar() {
-                var scroll = $(window).scrollTop();
-                if (scroll > 2200 && scroll < 2800) {
-                    $(".skills_projects_link").fadeIn("slow").addClass("show");
-                } else {
-                    $(".skills_projects_link").fadeOut("slow").removeClass("show");
-                }
-            }
-            projectsBar();
-        });
-    </script>
     <main id='home'>
+        <script>
+            $(window).scroll(function(event) {
+                function projectsBar() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 2200 && scroll < 2800) {
+                        $(".skills_projects_link").fadeIn("slow").addClass("show");
+                    } else {
+                        $(".skills_projects_link").fadeOut("slow").removeClass("show");
+                    }
+                }
+                projectsBar();
+            });
+        </script>
         <div class="about__me">
             <img class="avatar" src="/img/avatar-2-modified.svg" alt="user avatar"></img>
             <h1>Phoenix Reid</h1><br>
@@ -31,8 +31,7 @@ const Home = {
             <p>© 2022 - Developed by <a href="https://github.com/KazutoKashima">Phoenix Reid</a>, with ❤️ and VueJS.</p>
         </footer>
         </div>
-    </main>
-    
+    </main>   
 `
 };
 
