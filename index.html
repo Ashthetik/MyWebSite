@@ -31,6 +31,8 @@
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- Css file -->
     <link href="/css/style.css" rel="stylesheet">
+
+    <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
         crossorigin="anonymous">
@@ -56,16 +58,16 @@
     <!-- Main Js file -->
     <script src="/js/main.js"></script>
     <script>
-        $(window).scroll(function(event) {
-            function projectsBar() {
-                var scroll = $(window).scrollTop();
-                if (scroll > 2200 && scroll < 2800) {
-                    $(".skills_projects_link").fadeIn("slow").addClass("show");
-                } else {
-                    $(".skills_projects_link").fadeOut("slow").removeClass("show");
-                }
+        const checkpoint = 300;
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= checkpoint) {
+                opacity = 1 - currentScroll / checkpoint;
+            } else {
+                opacity = 0;
             }
-            projectsBar();
+            document.querySelector(".skills_projects_link").style.opacity = opacity;
         });
     </script>
 </body>
