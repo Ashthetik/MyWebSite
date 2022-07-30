@@ -87,7 +87,7 @@ a:hover {
 .card__custom__img {
     
     position: absolute;
-    width: 70%;
+    width: 75%;
     height: 100%;
     background-image: url(../img/cards_bg_img.svg);
     background-position: center;
@@ -95,7 +95,7 @@ a:hover {
     background-size: contain;
     display: inline-block;
     z-index: -1;
-    left: 60%;
+    left: 50%;
     transform: translateX(-50%);
     border-radius: 85px 0 100px 25px;
 
@@ -109,6 +109,9 @@ a:hover {
     padding: 0.5rem 1rem;
     font-weight: 900;
     color: #3D5467;
+    text-decoration: none;
+    bottom: 50%;
+
 }
 
 .card_custom__button a:hover, .btn_load_more:hover {
@@ -124,6 +127,16 @@ a:hover {
     font-size: 1.5rem;
 }
 
+.card__custom__text p {
+    left: 50%;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.date {
+    padding-left: 90px;
+}
+
 /* END Componenet */
 * {
     margin: 0;
@@ -133,7 +146,7 @@ a:hover {
 
 
 body {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Alegreya', Arial, Helvetica, sans-serif;
     color: white;
     background: linear-gradient(116.82deg, #3D5467 0%, #1A232B 99.99%, #333333 100%);
 
@@ -145,8 +158,8 @@ a {
 
 /* Home Page */
 main#home {
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     min-height: 600px;
     display: flex;
     justify-content: center;
@@ -173,13 +186,21 @@ main#home {
 }
 
 #home > .about__me > h1  {
+    font-family: 'Railway';
     font-style: normal;
     line-height: 32px;
-    letter-spacing: 0.115em;
+    letter-spacing: 0.15rem;
+}
+
+footer {
+    font-size: 22px;
+    padding: 2rem;
+    font-weight: 500px;
 }
 
 #home > .about__me > h3
 {
+    font-family: 'Railway';
     font-style: normal;
     line-height: 42px;
     letter-spacing: 0.05em;
@@ -191,7 +212,6 @@ main#home {
 }
 
 #home > .about__me p {
-    font-weight: 100;
     font-size: 22px;
     padding: 2rem;
 
@@ -200,10 +220,16 @@ main#home {
     background: linear-gradient(60deg, #3D5467 0%, #1A232B 99.99%, #333333 100%);
     border-radius: 25px;
     box-shadow: #000000 0px 0px 10px;
+    letter-spacing: 0.15rem;
+    font-weight: 500px;
 }
 
 .skills_projects_link {
-    position: relative;
+    position:fixed;
+    top: 0;
+    right: 300;
+    padding-top: 1rem;
+    width: auto;
 }
 
 .skills_projects_link > a {
@@ -218,7 +244,7 @@ main#home {
 .skills_projects_link > a:hover {
     color: #DB5461;
     transition: all 0.5s ease-in-out;
-
+    position: fixed;
 }
 
 .skills_projects_link > a:hover::after {
@@ -232,7 +258,7 @@ main#home {
     width: 30px;
     height: 2px;
     background-color: #DB5461;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s  1s ease-in-out;
 
 }
 
@@ -249,7 +275,7 @@ main#home {
 }
 
 nav a {
-        color: #e2e2e2;
+    color: #e2e2e2;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -300,16 +326,19 @@ nav a:hover {
 #skills_section ul  li {
     padding: 1rem;
     margin: 0.5rem;
-    background-color: #DB5461;
+    background-color: #ff2c2c;
     border: 5px solid #3D5467;
     border-radius: 35px;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin: 0 1rem;
+    object-fit: scale-down;
+    width: 25%;
+    height: auto;
+    /* vertical-align: middle; */
+    border-radius: 5px;
+    flex-basis: 350px;
+    top: 0;
 
 }
 
@@ -318,12 +347,6 @@ nav a:hover {
 }
 .rotate__card {
     transform: rotate3d(360,0,0,180deg);
-}
-
-/* Site Footer */
-footer {
-    text-align: center;
-    padding: 2rem 0;
 }
 
 /* Media Query  */
