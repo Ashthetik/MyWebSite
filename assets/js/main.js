@@ -1,7 +1,6 @@
 // Create route components:
 const Home = {
     template: `
-    
     <main id='home'>
         <div class="about__me">
             <img class="avatar" src="/img/avatar-2-modified.svg" alt="user avatar"></img>
@@ -19,8 +18,7 @@ const Home = {
             <p>© 2022 - Developed by <a href="https://github.com/KazutoKashima">Phoenix Reid</a>, with ❤️ and VueJS.</p>
         </footer>
         </div>
-    </main>
-    
+    </main>   
 `
 };
 

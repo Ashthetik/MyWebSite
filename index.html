@@ -31,6 +31,12 @@
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- Css file -->
     <link href="/css/style.css" rel="stylesheet">
+
+    <!-- jQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -51,6 +57,19 @@
     <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
     <!-- Main Js file -->
     <script src="/js/main.js"></script>
+    <script>
+        const checkpoint = 300;
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= checkpoint) {
+                opacity = 1 - currentScroll / checkpoint;
+            } else {
+                opacity = 0;
+            }
+            document.querySelector(".skills_projects_link").style.opacity = opacity;
+        });
+    </script>
 </body>
 
 </html>
